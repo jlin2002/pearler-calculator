@@ -1,0 +1,93 @@
+.sliderForm {
+  height: 100%;
+  animation: appear 1s;
+}
+
+.slider {
+  display: block;
+  appearance: none;
+  width: 72vw;
+  max-width: 32rem;
+  margin-bottom: 2rem;
+  height: 0.9rem;
+  border-radius: 0.45rem;
+  opacity: 0.9;
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  height: 1.3rem;
+  width: 0.7rem;
+  background: #f4f5f7;
+  border-radius: 0.35rem;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.formLabel {
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  display: block;
+  color: #212529;
+}
+
+.sliderLabels {
+  position: relative;
+  height: 3rem;
+}
+
+.sliderLabel {
+  position: absolute;
+  display: inline-block;
+  text-align: center;
+  width: max-content;
+  transform: translateX(-50%);
+  color: #212529;
+}
+
+.horizonLabel {
+  margin-bottom: 1rem;
+}
+
+.formControl {
+  margin-bottom: 3rem;
+}
+
+.submitButton {
+  display: block;
+  margin: auto;
+  margin-top: 5rem;
+  padding: 1rem 1.5rem;
+  letter-spacing: 1.5px;
+  font-weight: 700;
+  border-radius: 0.5rem;
+  background-color: #04b5b7;
+  opacity: 0.9;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.submitButton:hover {
+  opacity: 1;
+}
+
+@media screen and (max-width: 500px) {
+  .sliderLabel {
+    font-size: 0.9rem;
+    width: min-content;
+  }
+  .sliderLabels {
+    height: 4rem;
+  }
+}
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

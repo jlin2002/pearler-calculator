@@ -1,0 +1,35 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+  transition: height 0.5rem;
+}
+
+.calculator {
+  padding: 3rem 0 0;
+  animation: appear 1s;
+}
+
+.calculator > p {
+  padding: 0rem 1rem;
+  text-align: center;
+  margin: 1rem auto;
+  animation: appear 1s;
+}
+
+@media screen and (max-width: 450px) {
+  .calculator {
+    padding: 1rem;
+    min-height: 100vh;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
